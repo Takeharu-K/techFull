@@ -1,6 +1,6 @@
 CC            = gcc
 CFLAGS        = -O3 -Wall
-OBJS          = main.o func.o
+OBJS          = sosu.o 
 PROGRAM       = test
 
 all : $(PROGRAM)

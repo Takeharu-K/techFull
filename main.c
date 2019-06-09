@@ -1,18 +1,19 @@
 #include <stdio.h>
-#include "func.h"
-
-int func(void){
-	static int a; //static なので関数内で保持される
-	a++;
-	return a;
-}
 
 int main(void){
-	printf("These are static variance\n");
-	printf("%d\n",func());
-	printf("%d\n",func());
-	printf("%d\n",func());
+	int num;
+	int i,j;
 
-	func2();
-	//func1(); この関数はstaticで宣言されているのでmainから参照できない
+	scanf("%d",&num);
+	if(num >= 1 && num <= 10000){
+		for(i=0;i<num;i++){
+			for(j=0;j<=i;j++){
+				printf("*");
+			}
+			printf("\n");
+		}
+	}else{
+		printf("Error\n");
+	}
+	return 0;
 }
