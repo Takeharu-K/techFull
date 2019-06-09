@@ -1,3 +1,2 @@
-func.o
-main.o
+*.o
 test
